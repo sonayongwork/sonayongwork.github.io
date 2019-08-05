@@ -144,19 +144,27 @@
 			</div>
 			<!-- object 3 CAR -->
 			<div class="object3">
-				<div class="previous">
+				<div class="previous" id="carplay">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="car">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1205.14 611.2"><circle class="w" cx="336.97" cy="540.18" r="71.02"/><circle class="w" cx="864.65" cy="540.18" r="71.02"/><ellipse class="w" cx="602.57" cy="399.13" rx="602.57" ry="119.91"/><ellipse class="w" cx="607.07" cy="210.06" rx="349.25" ry="210.06"/></svg>
 				</div>
+				<!-- object3 car Sound -->
+					<audio id="carsound" preload="auto">
+				      <source src="./sound/lock.mp3" type="audio/mp3">
+				    </audio>
 				</div>
-				<div class="next">
+				<div class="next" id="lockplay">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="car">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1205.14 611.2"><circle class="w" cx="336.97" cy="540.18" r="71.02"/><circle class="w" cx="864.65" cy="540.18" r="71.02"/><ellipse class="w" cx="602.57" cy="399.13" rx="602.57" ry="119.91"/><ellipse class="w" cx="607.07" cy="210.06" rx="349.25" ry="210.06"/></svg>
 				</div>
+				<!-- object3 lock Sound -->
+					<audio id="locksound" preload="auto">
+				      <source src="./sound/lock.mp3" type="audio/mp3">
+				    </audio>
 				</div>
 				
 			</div>
@@ -268,7 +276,7 @@
 				    </audio>
 				</div>
 			</div>
-				<!-- object 9 CUP -->
+			<!-- object 8 CUP -->
 			<div class="object8">
 				<div class="previous">
 					<div class="sky"></div>
@@ -280,29 +288,39 @@
 					<div class="ground"></div>
 				</div>
 			</div>
-				<!-- object 9 CUP -->
+				<!-- object 9 TRAIN -->
 			<div class="object9">
 				<div class="previous">
 					<div class="sky"></div>
 					<div class="ground"></div>
-					
+					<div class="old"></div>
 				</div>
 				<div class="next">
 					<div class="sky"></div>
 					<div class="ground"></div>
+					<div class="new"></div>
+					<div class="new"></div>
 				</div>
 			</div>
-				<!-- object 10 CUP -->
+				
+				<!-- object 10 ball -->
 			<div class="object10">
-				<div class="previous">
+				<div class="previous" id="soccerplay">
 					<div class="sky"></div>
-					<div class="ground"></div>
-					
+				<!-- object9 soccer Sound -->
+					<audio id="soccersound" preload="auto">
+				      <source src="./sound/soccer.wav" type="audio/wav">
+				    </audio>	
 				</div>
-				<div class="next">
+				<div class="next" id="basketballplay">
 					<div class="sky"></div>
-					<div class="ground"></div>
+					<div class="ground" id="g2"></div>
+					<div class="ground" id="g1"></div>
 				</div>
+				<!-- object9 basketball Sound -->
+					<audio id="basketballsound" preload="auto">
+				      <source src="./sound/basketball.wav" type="audio/wav">
+				    </audio>	
 			</div>
 		</div>
 	</div>
@@ -576,6 +594,48 @@ var angle = 0;
         $("#classicplay").mouseout(function() {
         	classicsound.pause();
         });
+
+    // car sound
+    var carsound = $("#carsound")[0];
+        $("#carplay").mouseover(function() {
+       		carsound.loop = false;
+        	carsound.play();
+        });
+        $("#carplay").mouseout(function() {
+        	carsound.pause();
+        });
+
+    // lock sound
+    var locksound = $("#locksound")[0];
+        $("#lockplay").mouseover(function() {
+       		locksound.loop = false;
+        	locksound.play();
+        });
+        $("#lockplay").mouseout(function() {
+        	locksound.pause();
+        });
+
+    // soccer sound
+    var soccersound = $("#soccersound")[0];
+        $("#soccerplay").mouseover(function() {
+       		soccersound.loop = false;
+        	soccersound.play();
+        });
+        $("#soccerplay").mouseout(function() {
+        	soccersound.pause();
+        });
+
+    // basketball sound
+    var basketballsound = $("#basketballsound")[0];
+        $("#basketballplay").mouseover(function() {
+       		basketballsound.loop = true;
+        	basketballsound.play();
+        });
+        $("#basketballplay").mouseout(function() {
+        	basketballsound.pause();
+        });
+
+
 
 	// SUN POPUP
 		// var tl = new TimelineMax({repeat:-1, yoyo:true});
