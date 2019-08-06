@@ -744,7 +744,6 @@ body{
 	    height: 100%;
 	    transition: all 1s;
 	    overflow: visible;
-	    transform-origin: 50% 0%;
 	}
 
 	.mobile-box1 {
