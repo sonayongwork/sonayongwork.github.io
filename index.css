@@ -458,6 +458,8 @@ body{
 .object9 .previous .ground{background: green;}
 .object9 .next .sky{background: skyblue;}
 .object9 .next .ground{background: green;}
+.object9 .previous {overflow: hidden;}
+.object9 .next {overflow: hidden;}
 
 .object10 .previous .sky{background: #00ea4d;}
 .object10 .previous .ground{background: transparent;}
@@ -700,22 +702,71 @@ body{
 
 .old {
     position: absolute;
-    width: 100vw;
+    width: 300vw;
     height: 18vw;
     background: #fff;
     top: 50%;
-    left: 50%;
+    left: -300%;
     transform: translate(-50%, -50%);
+    animation-name: old;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
 
 .new {
     position: absolute;
-    width: 100vw;
+    width: 300vw;
     height: 18vw;
     background: #fff;
     top: 50%;
-    left: 50%;
+    left: -300%;
     transform: translate(-50%, -50%);
+    animation-name: new;
+    animation-duration: 13s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+@keyframes new{
+	0%{
+		left: -300%;
+	}
+
+	20%{
+		left: -300%;
+	}
+	40%{
+		left: 0%;
+	}
+
+	70%{
+		left: 0%;
+	}
+
+	100%{
+		left: 400%;
+	}
+}
+
+@keyframes old{
+	0%{
+		left: -300%;
+	}
+
+	5%{
+		left: 0%;
+	}
+
+	90%{
+		left: 0%;
+	}
+
+	100%{
+		left: 400%;
+	}
 }
 
 .tv {

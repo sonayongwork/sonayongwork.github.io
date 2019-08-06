@@ -308,15 +308,23 @@
 			</div>
 				<!-- object 9 TRAIN -->
 			<div class="object9">
-				<div class="previous">
+				<div class="previous" id="oldplay">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="old"></div>
+					<!-- object8 Ice Sound -->
+					<audio id="oldsound" preload="auto">
+				      <source src="./sound/old.wav" type="audio/wav">
+				    </audio>
 				</div>
-				<div class="next">
+				<div class="next" id="newplay">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="new"></div>
+					<!-- object8 Ice Sound -->
+					<audio id="newsound" preload="auto">
+				      <source src="./sound/new.wav" type="audio/wav">
+				    </audio>
 				</div>
 			</div>
 				
@@ -501,14 +509,20 @@ var angle = 0;
 		$(".hot-cup").css("animation-play-state", "running");
 		$(".hot-hot").css("animation-play-state", "running");
 	});
-	$(".object5 .previous").mouseout(function(){
-		$(".hot-cup").css("animation-play-state", "pause");
-		$(".hot-hot").css("animation-play-state", "pause");
-	});
 
 	$(".object5 .next").mouseover(function(){
-		$(".hot-cup").css("animation-play-state", "pause");
-		$(".hot-hot").css("animation-play-state", "pause");
+		$(".hot-cup").css("animation-play-state", "paused");
+		$(".hot-hot").css("animation-play-state", "paused");
+	});
+
+	$(".object9 .previous").mouseover(function(){
+		$(".old").css("animation-play-state", "running");
+		$(".new").css("animation-play-state", "paused");
+	});
+
+	$(".object9 .next").mouseover(function(){
+		$(".new").css("animation-play-state", "running");
+		$(".old").css("animation-play-state", "paused");
 	});
 
 	// Sounds
@@ -670,6 +684,26 @@ var angle = 0;
         });
         $("#basketballplay").mouseout(function() {
         	basketballsound.pause();
+        });
+
+    // old sound
+    var oldsound = $("#oldsound")[0];
+        $("#oldplay").mouseover(function() {
+       		oldsound.loop = false;
+        	oldsound.play();
+        });
+        $("#oldplay").mouseout(function() {
+        	oldsound.pause();
+        });
+
+    // basketball sound
+    var newsound = $("#newsound")[0];
+        $("#newplay").mouseover(function() {
+       		newsound.loop = false;
+        	newsound.play();
+        });
+        $("#newplay").mouseout(function() {
+        	newsound.pause();
         });
 
 
