@@ -8,6 +8,23 @@
 	<link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 </head>
 <body>
+<div class="mobile">
+	<div class="mobile-page">
+		<div class="mobile-box1"></div>
+		<div class="mobile-box2"></div>
+	</div>
+	<div class="upsidedown" id="mobileskyplay"></div>
+	<div class="normal" id="mobileseaplay"></div>
+	<!-- mobile sky Sound -->
+			<audio id="mobileskysound" preload="auto">
+				<source src="./sound/sun.wav" type="audio/wav">
+			</audio>	
+	<!-- mobile sea Sound -->
+			<audio id="mobileseasound" preload="auto">
+				<source src="./sound/night.wav" type="audio/wav">
+			</audio>	
+</div>
+<div class="desktop">
 	<div class="firstpage">
 		<div class="title">Background</div>
 	</div>
@@ -281,12 +298,12 @@
 				<div class="previous">
 					<div class="sky"></div>
 					<div class="ground"></div>
-					<div class="tv1"></div>					
+					<div class="tv"></div>					
 				</div>
 				<div class="next">
 					<div class="sky"></div>
 					<div class="ground"></div>
-					<div class="tv2"></div>
+					<div class="tv"></div>
 				</div>
 			</div>
 				<!-- object 9 TRAIN -->
@@ -324,7 +341,7 @@
 			</div>
 		</div>
 	</div>
-	
+</div>	
 <!-------------------- JS -------------------->
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script src="./index.js"></script>
@@ -351,6 +368,26 @@ var angle = 0;
 		 angle -= 180;
         $(".page").css({'transform': 'rotate('+angle+'deg)'},1000);
 	});
+
+	// $(".mobile-page").click(function(){
+	// 	angle += 180;
+	// 		$(".mobile-page").css({'transform': 'rotate('+angle+'deg)'},1000);     
+	// });
+
+	$(".normal").click(function(){
+		angle += 180;
+		$(".mobile-page").css({'transform': 'rotate('+angle+'deg)'},1000);   
+		$(".normal").hide();
+		$(".upsidedown").show();
+	});
+
+	$(".upsidedown").click(function(){
+		angle += 180;
+		$(".mobile-page").css({'transform': 'rotate('+angle+'deg)'},1000);   
+		$(".upsidedown").hide();
+		$(".normal").show();
+	});
+
 
 // 페이지 전환
 
@@ -634,6 +671,30 @@ var angle = 0;
         $("#basketballplay").mouseout(function() {
         	basketballsound.pause();
         });
+
+
+        // mobilesky sound
+    var mobileskysound = $("#mobileskysound")[0];
+    var mobileseasound = $("#mobileseasound")[0];
+
+        $("#mobileskyplay").click(function() {
+       		mobileskysound.loop = true;
+        	mobileskysound.play();
+        	mobileseasound.pause();
+        });
+    
+        $("#mobileseaplay").click(function() {
+       		mobileseasound.loop = true;
+        	mobileseasound.play();
+        	mobileskysound.pause();
+        });
+
+
+
+
+      
+
+
 
 
 

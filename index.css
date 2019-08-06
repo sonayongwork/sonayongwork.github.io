@@ -7,6 +7,10 @@ body{
 	overflow: hidden;
 }
 
+.mobile{
+	display: none;
+}
+
 .mobilefirstpage{
 	display: none !important;
 }
@@ -445,9 +449,9 @@ body{
 .object7 .next .sky{background: linear-gradient(0deg, #00abff, #004bff);}
 .object7 .next .ground{background: transparent;}
 
-.object8 .previous .sky{background: #e9e9e9;}
+.object8 .previous .sky{background: blue;}
 .object8 .previous .ground{background: transparent;}
-.object8 .next .sky{background: #e9e9e9;}
+.object8 .next .sky{background: green;}
 .object8 .next .ground{background: transparent;}
 
 .object9 .previous .sky{background: skyblue;}
@@ -712,4 +716,72 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.tv {
+    position: absolute;
+    width: 35vw;
+    height: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+}
+
+@media all and (max-device-width: 800px){
+	.desktop{
+		display: none;
+	}
+
+	.mobile{
+		display: block;
+		cursor: pointer;
+	}
+
+	.mobile-page {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    transition: all 1s;
+	    overflow: visible;
+	}
+
+	.mobile-box1 {
+	    position: fixed;
+	    width: 300%;
+	    height: 200%;
+	    top: -150%;
+	    left: -100%;
+	    background: skyblue;
+	}
+
+	.mobile-box2 {
+	    position: absolute;
+	    width: 300%;
+	    height: 200%;
+	    top: 50%;
+	    left: -100%;
+	    background: green;
+	}
+
+	.upsidedown {
+		display: none;
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    background: transparent;
+	}
+
+	.normal {
+		display: block;
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    background: transparent;
+	}
+
 }
