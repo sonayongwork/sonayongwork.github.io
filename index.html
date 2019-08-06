@@ -164,6 +164,7 @@
 				<div class="previous" id="lock1play">
 					<div class="sky"></div>
 					<div class="ground"></div>
+					<div class="previouslight"></div>
 					<div class="car">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1205.14 611.2"><circle class="w" cx="336.97" cy="540.18" r="71.02"/><circle class="w" cx="864.65" cy="540.18" r="71.02"/><ellipse class="w" cx="602.57" cy="399.13" rx="602.57" ry="119.91"/><ellipse class="w" cx="607.07" cy="210.06" rx="349.25" ry="210.06"/></svg>
 				</div>
@@ -175,6 +176,7 @@
 				<div class="next" id="lock2play">
 					<div class="sky"></div>
 					<div class="ground"></div>
+					<div class="nextlight"></div>
 					<div class="car">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1205.14 611.2"><circle class="w" cx="336.97" cy="540.18" r="71.02"/><circle class="w" cx="864.65" cy="540.18" r="71.02"/><ellipse class="w" cx="602.57" cy="399.13" rx="602.57" ry="119.91"/><ellipse class="w" cx="607.07" cy="210.06" rx="349.25" ry="210.06"/></svg>
 				</div>
@@ -188,7 +190,7 @@
 			<!-- object 4 HOUSE -->
 			<div class="object4">
 				<div class="previous" id="clubplay">
-					<div class="sky"></div>
+					<div class="sky changebg"></div>
 					<div class="ground"></div>
 					<div class="house">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 516.77 323.23"><polygon class="w" points="516.77 129.69 439.13 0 83.61 0 0 129.69 52.6 129.69 52.6 323.23 464.17 323.23 464.17 129.69 516.77 129.69"/></svg>
@@ -210,16 +212,16 @@
 				    </audio>
 				</div>
 			</div>
-			<!-- object 6 CUP -->
+			<!-- object 5 CUP -->
 			<div class="object5">
 				<div class="previous" id="hotplay">
 					<div class="sky"></div>
 					<div class="ground"></div>
-					<div class="hot-cup">
+					<div class="hot-cup steam">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452.44 321"><ellipse class="w" cx="176.07" cy="41.89" rx="174.71" ry="41.89"/><path class="w" d="M294.63,345.91S266.24,625,469.34,625,644.06,345.91,644.06,345.91" transform="translate(-293.28 -304.03)"/><path class="w" d="M644.06,359.76A101.66,101.66,0,1,0,745.72,461.42,101.66,101.66,0,0,0,644.06,359.76Zm0,156a54.32,54.32,0,1,1,54.32-54.32A54.32,54.32,0,0,1,644.06,515.74Z" transform="translate(-293.28 -304.03)"/></svg>
 					</div>
 					<div class="hot-hot"></div>
-					<!-- object6 Hot Sound -->
+					<!-- object5 Hot Sound -->
 					<audio id="hotsound" preload="auto">
 				      <source src="./sound/hot.mp3" type="audio/mp3">
 				    </audio>
@@ -230,22 +232,21 @@
 					<div class="cup">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452.44 321"><ellipse class="w" cx="176.07" cy="41.89" rx="174.71" ry="41.89"/><path class="w" d="M294.63,345.91S266.24,625,469.34,625,644.06,345.91,644.06,345.91" transform="translate(-293.28 -304.03)"/><path class="w" d="M644.06,359.76A101.66,101.66,0,1,0,745.72,461.42,101.66,101.66,0,0,0,644.06,359.76Zm0,156a54.32,54.32,0,1,1,54.32-54.32A54.32,54.32,0,0,1,644.06,515.74Z" transform="translate(-293.28 -304.03)"/></svg>
 					</div>
-					<!-- object6 Ice Sound -->
+					<!-- object5 Ice Sound -->
 					<audio id="icesound" preload="auto">
 				      <source src="./sound/ice.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 				
 			</div>
-				<!-- object 7 CUP -->
-			<div class="object6">
+				<!-- object 6 PAN -->
+			<!-- <div class="object6">
 				<div class="previous">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="pan">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586.5 132.19"><path class="w" d="M891.91,373.55H770.17c0-25.07-99.82-45.4-223-45.4s-223,20.33-223,45.4a10.07,10.07,0,0,0,.68,3.55c4.13,16.32,32.64,83.24,222.29,83.24,128.95,0,183.4-30.94,206.34-55.87H891.91c10.4,0,18.83-6.92,18.83-15.46S902.31,373.55,891.91,373.55Z" transform="translate(-324.23 -328.15)"/></svg>
 					</div>
-					<!-- object6 Fan Sound -->
 					<audio id="fansound" preload="auto">
 				      <source src="./sound/fan.mp3" type="audio/mp3">
 				    </audio>
@@ -256,7 +257,6 @@
 					<div class="pan">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586.5 132.19"><path class="w" d="M891.91,373.55H770.17c0-25.07-99.82-45.4-223-45.4s-223,20.33-223,45.4a10.07,10.07,0,0,0,.68,3.55c4.13,16.32,32.64,83.24,222.29,83.24,128.95,0,183.4-30.94,206.34-55.87H891.91c10.4,0,18.83-6.92,18.83-15.46S902.31,373.55,891.91,373.55Z" transform="translate(-324.23 -328.15)"/></svg>
 					</div>
-					<!-- object6 Ice Sound -->
 					<audio id="pansound" preload="auto">
 				      <source src="./sound/pan.mp3" type="audio/mp3">
 				    </audio>
@@ -265,18 +265,17 @@
 					<div class="previous" id="fanplay"></div>
 					<div class="next" id="panplay"></div>
 				</div>
-				<!-- <div class="pan-fan"></div> -->
 				
-			</div>
-				<!-- object 8 CUP -->
-			<div class="object7">
+			</div> -->
+				<!-- object 6 CAN -->
+			<div class="object6">
 				<div class="previous" id="cokeplay">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="can">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.64 311.23"><path class="w" d="M478.55,87.82c-41.32,0-74.82,17.87-74.82,39.91V359.14c0,22,33.5,39.91,74.82,39.91s74.82-17.87,74.82-39.91V127.73C553.37,105.69,519.87,87.82,478.55,87.82Z" transform="translate(-403.73 -87.82)"/></svg>
 					</div>
-					<!-- object8 Ice Sound -->
+					<!-- object6 coke1 -->
 					<audio id="cokesound" preload="auto">
 				      <source src="./sound/coke.mp3" type="audio/mp3">
 				    </audio>
@@ -287,14 +286,14 @@
 					<div class="can">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.64 311.23"><path class="w" d="M478.55,87.82c-41.32,0-74.82,17.87-74.82,39.91V359.14c0,22,33.5,39.91,74.82,39.91s74.82-17.87,74.82-39.91V127.73C553.37,105.69,519.87,87.82,478.55,87.82Z" transform="translate(-403.73 -87.82)"/></svg>
 					</div>
-					<!-- object8 Ice Sound -->
+					<!-- object6 coke2 -->
 					<audio id="cokecokesound" preload="auto">
 				      <source src="./sound/coke.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 			</div>
-			<!-- object 8 CUP -->
-			<div class="object8">
+			<!-- object 7 TV -->
+			<div class="object7">
 				<div class="previous" id="tv1play">
 					<div class="sky"></div>
 					<div class="ground"></div>
@@ -315,12 +314,11 @@
 				</div>
 			</div>
 				<!-- object 9 TRAIN -->
-			<div class="object9">
+<!-- 			<div class="object9">
 				<div class="previous" id="oldplay">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="old"></div>
-					<!-- object8 Ice Sound -->
 					<audio id="oldsound" preload="auto">
 				      <source src="./sound/old.mp3" type="audio/mp3">
 				    </audio>
@@ -329,28 +327,31 @@
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="new"></div>
-					<!-- object8 Ice Sound -->
 					<audio id="newsound" preload="auto">
 				      <source src="./sound/new.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 			</div>
-				
+				 -->
 				<!-- object 10 ball -->
-			<div class="object10">
+			<div class="object8">
 				<div class="previous" id="soccer1play">
 					<div class="sky"></div>
-				<!-- object9 soccer1 Sound -->
+					<div class="ground"></div>
+					<div class="rectangle1"></div>
+					<div class="rectangle2"></div>
+				<!-- object10 soccer1 Sound -->
 					<audio id="soccer1sound" preload="auto">
 				      <source src="./sound/soccer1.mp3" type="audio/mp3">
 				    </audio>	
 				</div>
 				<div class="next" id="soccer2play">
 					<div class="sky"></div>
-					<div class="ground" id="g2"></div>
-					<div class="ground" id="g1"></div>
+					<div class="ground"></div>
+					<div class="rectangle1"></div>
+					<div class="rectangle2"></div>
 				</div>
-				<!-- object9 soccer2 Sound -->
+				<!-- object10 soccer2 Sound -->
 					<audio id="soccer2sound" preload="auto">
 				      <source src="./sound/soccer3.mp3" type="audio/mp3">
 				    </audio>	
@@ -435,20 +436,20 @@ var angle = 0;
 		$(".object6").show();
 	});
 	$(".object8 .previous").click(function(){
-		$(".object9").hide();
+		$(".object1").hide();
 		$(".object7").show();
 	});
-	$(".object9 .previous").click(function(){
-		$(".object10").hide();
-		$(".object8").show();
-	});
-	$(".object10 .previous").click(function(){
-		$(".object1").hide();
-		$(".object9").show();
-	});
+	// $(".object9 .previous").click(function(){
+	// 	$(".object10").hide();
+	// 	$(".object8").show();
+	// });
+	// $(".object10 .previous").click(function(){
+	// 	$(".object1").hide();
+	// 	$(".object9").show();
+	// });
 	$(".object1 .previous").click(function(){
-		$(".object8").hide();
-		$(".object10").show();
+		$(".object2").hide();
+		$(".object8").show();
 	});
 
 	// next 클릭
@@ -478,18 +479,18 @@ var angle = 0;
 	});
 	$(".object8 .next").click(function(){
 		$(".object7").hide();
-		$(".object9").show();
-	});
-	$(".object9 .next").click(function(){
-		$(".object8").hide();
-		$(".object10").show();
-	});
-	$(".object10 .next").click(function(){
-		$(".object9").hide();
 		$(".object1").show();
 	});
+	// $(".object9 .next").click(function(){
+	// 	$(".object8").hide();
+	// 	$(".object10").show();
+	// });
+	// $(".object10 .next").click(function(){
+	// 	$(".object9").hide();
+	// 	$(".object1").show();
+	// });
 	$(".object1 .next").click(function(){
-		$(".object10").hide();
+		$(".object8").hide();
 		$(".object2").show();
 	});
 
@@ -505,12 +506,40 @@ var angle = 0;
 
 // 요소 애니메이션
 
-	$(".object6 .previous").mouseover(function(){
-		$(".pan-hot").css("background", "transparent");
+	// $(".object6 .previous").mouseover(function(){
+	// 	$(".pan-hot").css("background", "transparent");
+	// });
+
+	// $(".object6 .next").mouseover(function(){
+	// 	$(".pan-hot").css("background", "#000");
+	// });
+
+	$(".object3 .previous").mouseover(function(){
+		$(".nextlight").removeClass("lightani");
+		$(".previouslight").addClass("lightani");
 	});
 
-	$(".object6 .next").mouseover(function(){
-		$(".pan-hot").css("background", "#000");
+	$(".object3 .next").mouseover(function(){
+		$(".previouslight").removeClass("lightani");
+		$(".nextlight").addClass("lightani");
+	});
+
+	
+
+
+	$(".object4 .next, .object6 .previous").click(function(){
+		$(".hot-hot").show();
+		$(".hot-cup").addClass("steam");
+	});
+
+	$(".object4 .previous").mouseover(function(){
+		$(".object4 .previous .sky").removeClass("newbg");
+		$(".object4 .previous .sky").addClass("changebg");
+	});
+
+	$(".object4 .next").mouseover(function(){
+		$(".object4 .previous .sky").removeClass("changebg");
+		$(".object4 .previous .sky").addClass("newbg");
 	});
 
 	$(".object5 .previous").mouseover(function(){
@@ -523,15 +552,20 @@ var angle = 0;
 		$(".hot-hot").css("animation-play-state", "paused");
 	});
 
-	$(".object9 .previous").mouseover(function(){
-		$(".old").css("animation-play-state", "running");
-		$(".new").css("animation-play-state", "paused");
+	$(".object5").click(function(){
+		$(".hot-hot").hide();
+		$(".hot-cup").removeClass("steam");
 	});
 
-	$(".object9 .next").mouseover(function(){
-		$(".new").css("animation-play-state", "running");
-		$(".old").css("animation-play-state", "paused");
-	});
+	// $(".object9 .previous").mouseover(function(){
+	// 	$(".old").css("animation-play-state", "running");
+	// 	$(".new").css("animation-play-state", "paused");
+	// });
+
+	// $(".object9 .next").mouseover(function(){
+	// 	$(".new").css("animation-play-state", "running");
+	// 	$(".old").css("animation-play-state", "paused");
+	// });
 
 	// Sounds
 
@@ -657,22 +691,22 @@ var angle = 0;
     // car sound
     var lock1sound = $("#lock1sound")[0];
         $("#lock1play").mouseover(function() {
-       		lock1sound.loop = false;
+       		// lock1sound.loop = false;
         	lock1sound.play();
         });
-        $("#lock1play").mouseout(function() {
-        	lock1sound.pause();
-        });
+        // $("#lock1play").mouseout(function() {
+        // 	lock1sound.pause();
+        // });
 
     // lock sound
     var lock2sound = $("#lock2sound")[0];
         $("#lock2play").mouseover(function() {
-       		lock2sound.loop = false;
+       		// lock2sound.loop = false;
         	lock2sound.play();
         });
-        $("#lock2play").mouseout(function() {
-        	lock2sound.pause();
-        });
+        // $("#lock2play").mouseout(function() {
+        // 	lock2sound.pause();
+        // });
 
     // tv1 sound
     var tv1sound = $("#tv1sound")[0];
@@ -861,7 +895,7 @@ var angle = 0;
 						        h = $win.height();
 						    };
 
-						$(".object4 .previous .sky").resize(getWidth).mousemove(function(e) {
+						$(".object4 .previous .changebg").resize(getWidth).mousemove(function(e) {
 
 						    rgb = [
 						        Math.round(e.pageX/w * 255),
@@ -869,7 +903,7 @@ var angle = 0;
 						        150
 						    ];
 
-						    $(".object4 .previous .sky").css('background','rgb('+rgb.join(',')+')');
+						    $(".object4 .previous .changebg").css('background','rgb('+rgb.join(',')+')');
 
 						}).resize();
 

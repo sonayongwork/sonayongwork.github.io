@@ -46,6 +46,7 @@ body{
 	position: absolute;
 	width: 100%;
 	height: auto;
+	font-size: 2.1vw;
 	top: 50%;
 	text-align: center;
 	transform: translateY(-50%);
@@ -265,6 +266,8 @@ body{
     transform: rotate(180deg);
 }
 
+
+
 /* object 5 */ 
 .object5 {
 	display: none;
@@ -360,7 +363,7 @@ body{
 }
 
 /* object 9 */
-.object9 {
+/*.object9 {
 	display: none;
     position: absolute;
     width: 100%;
@@ -368,10 +371,10 @@ body{
     top: 0;
     left: 0;
     background: transparent;
-}
+}*/
 
 /* object 10 */
-.object10 {
+/*.object10 {
 	display: none;
     position: absolute;
     width: 100%;
@@ -379,7 +382,7 @@ body{
     top: -100%;
     left: 0;
     transform: rotate(180deg);
-}
+}*/
 /*.balloon {
 	position: absolute;
     width: 15vw;
@@ -429,47 +432,51 @@ body{
 .object3 .next .sky{background: linear-gradient(0deg, yellow, yellow, yellow, #d1f0ff, #88e6ff, #2eafff, #0095ff);}
 .object3 .next .ground{background: #4e4e4e;}
 
-.object4 .previous .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00);}
+.object4 .previous .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00); transition: background 0.3s;}
 .object4 .previous .ground{background: #24ff39;}
 .object4 .next .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00);}
 .object4 .next .ground{background: #24ff39;}
+
 
 .object5 .previous .sky{background: #e9e9e9;}
 .object5 .previous .ground{background: #a9a9a9;}
 .object5 .next .sky{background: #e9e9e9;}
 .object5 .next .ground{background: #a9a9a9;}
 
-.object6 .previous .sky{background: #e9e9e9;}
+/*.object6 .previous .sky{background: #e9e9e9;}
 .object6 .previous .ground{background: #ccc;}
 .object6 .next .sky{background: #e9e9e9;}
 .object6 .next .ground{background: #ccc;}
+*/
+.object6 .previous .sky{background: linear-gradient(0deg, #ff6c00, #ff1d00);}
+.object6 .previous .ground{background: #e9e9e9;}
+.object6 .next .sky{background: linear-gradient(0deg, #00abff, #004bff);}
+.object6 .next .ground{background: gray;}
 
-.object7 .previous .sky{background: linear-gradient(0deg, #ff6c00, #ff1d00);}
-.object7 .previous .ground{background: transparent;}
-.object7 .next .sky{background: linear-gradient(0deg, #00abff, #004bff);}
-.object7 .next .ground{background: transparent;}
+.object7 .previous .sky{background: #000;}
+.object7 .previous .ground{background: gray;}
+.object7 .next .sky{background: #000; }
+.object7 .next .ground{background: gray;}
+.object7 .previous{transition: background 0.3s;}
+.object7 .previous:hover .sky{background: blue;}
+.object7 .previous:hover .ground{background: midnightblue;}
 
-.object8 .previous .sky{background: blue;}
-.object8 .previous .ground{background: transparent;}
-.object8 .next .sky{background: green;}
-.object8 .next .ground{background: transparent;}
-
-.object9 .previous .sky{background: skyblue;}
+/*.object9 .previous .sky{background: skyblue;}
 .object9 .previous .ground{background: green;}
 .object9 .next .sky{background: skyblue;}
 .object9 .next .ground{background: green;}
 .object9 .previous {overflow: hidden;}
 .object9 .next {overflow: hidden;}
+*/
+.object8 .previous .sky{background: gray;}
+.object8 .previous .ground{background: #00ea4d;}
+.object8 .next .sky{background: gray;}
+.object8 .next .ground{background: #00ea4d;}
 
-.object10 .previous .sky{background: #00ea4d;}
-.object10 .previous .ground{background: transparent;}
-.object10 .next .sky{background: #00ea4d;}
-.object10 .next .ground{background: transparent;}
-
-.object10 #g2 {
+.object8 #g2 {
     background: repeating-linear-gradient(50deg, #fff 1.2%, #00ea4d,#00ea4d,#00ea4d,#00ea4d 2%);
 }
-.object10 #g1 {
+.object8 #g1 {
     background: repeating-linear-gradient(120deg, #fff 1%, transparent, transparent, transparent, transparent, transparent 2%);
     border-top: 0.15vw solid #fff;
 }
@@ -527,7 +534,7 @@ body{
 
 
 
-.treepopup1{
+/*.treepopup1{
 	width: 35vw;
 	height: 35vw;
 	top: 12vw;
@@ -539,7 +546,7 @@ body{
 	height: 35vw;
 	top: 12vw;
 	left: calc(50% + 3vw);
-}
+}*/
 	.tree-container{
 			position: relative;
 			width: 100%;
@@ -576,13 +583,13 @@ body{
 		  padding: 0 0.3vw;
 		}
 
-.cuppopup1{
+/*.cuppopup1{
 	position: absolute;
 	width: 35vw;
     height: 35vw;
     top: 10vw;
     left: 5vw;
-}
+}*/
 	.hot-container {
 	    position: relative;
 	    width: 100%;
@@ -601,6 +608,9 @@ body{
 	    transform: translate(-50%, -50%);
 	    cursor: pointer;
 		filter: blur(0px);
+	}
+
+	.steam{
 		animation-name: steam;
 		animation-duration: 6s;
 		animation-fill-mode: forwards;
@@ -619,6 +629,7 @@ body{
 		animation-duration: 3s;
 		animation-fill-mode: forwards;
 		animation-play-state: paused;
+		transition: all 1s;
 	}
 
 	@keyframes hot{
@@ -639,13 +650,13 @@ body{
 		}
 	}
 
-.cuppopup2{
+/*.cuppopup2{
 	position: absolute;
 	width: 35vw;
     height: 35vw;
     top: 10vw;
     right: 5vw;
-}
+}*/
 	.ice-container {
     position: relative;
     width: 100%;
@@ -700,7 +711,41 @@ body{
 }
 
 
-.old {
+.previouslight {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.nextlight {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.lightani{
+	animation-name: light;
+	animation-delay: 0.1s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+/*	animation-timing-function: linear;*/
+}
+
+@keyframes light{
+	0%{
+		background: transparent;
+	}
+	50%{
+		background: yellow;
+	}
+	100%{
+		background: transparent;
+	}
+}
+
+/*.old {
     position: absolute;
     width: 300vw;
     height: 18vw;
@@ -725,10 +770,10 @@ body{
     transform: translate(-50%, -50%);
     animation-name: new;
     animation-duration: 13s;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-play-state: paused;
-}
+}*/
 
 @keyframes new{
 	0%{
@@ -756,7 +801,7 @@ body{
 		left: -300%;
 	}
 
-	5%{
+	10%{
 		left: 0%;
 	}
 
@@ -777,6 +822,32 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 35vw;
+    height: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: repeating-linear-gradient(120deg, #fff 0%, transparent, transparent, transparent, transparent, transparent 3%);
+    border: 10px solid #fff;
+    border-bottom: 0;
+}
+
+.rectangle2 {
+    position: absolute;
+    width: 35vw;
+    height: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: repeating-linear-gradient(50deg, #fff 0%, transparent, transparent, transparent, transparent, transparent 3%);
+}
+
+.newbg{
+	background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00) !important;
 }
 
 @media all and (max-device-width: 800px){
