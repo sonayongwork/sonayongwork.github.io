@@ -17,11 +17,11 @@
 	<div class="normal" id="mobileseaplay"></div>
 	<!-- mobile sky Sound -->
 			<audio id="mobileskysound" preload="auto">
-				<source src="./sound/sun.wav" type="audio/wav">
+				<source src="./sound/sun.mp3" type="audio/mp3">
 			</audio>	
 	<!-- mobile sea Sound -->
 			<audio id="mobileseasound" preload="auto">
-				<source src="./sound/night.wav" type="audio/wav">
+				<source src="./sound/sea.mp3" type="audio/mp3">
 			</audio>	
 </div>
 <div class="desktop">
@@ -46,7 +46,7 @@
 
 					<!-- object1 Sun Sound -->
 					<audio id="sunsound" preload="auto">
-				      <source src="./sound/sun.wav" type="audio/wav">
+				      <source src="./sound/sun.mp3" type="audio/mp3">
 				    </audio>
 				    <!-- object1 Sun Sound fin -->
 				</div>
@@ -63,7 +63,7 @@
 
 					<!-- object1 Moon Sound -->
 					<audio id="moonsound" preload="auto">
-				      <source src="./sound/night.wav" type="audio/wav">
+				      <source src="./sound/night.mp3" type="audio/mp3">
 				    </audio>
 				    <!-- object1 Sun Sound fin -->
 				</div>
@@ -161,26 +161,26 @@
 			</div>
 			<!-- object 3 CAR -->
 			<div class="object3">
-				<div class="previous" id="carplay">
+				<div class="previous" id="lock1play">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="car">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1205.14 611.2"><circle class="w" cx="336.97" cy="540.18" r="71.02"/><circle class="w" cx="864.65" cy="540.18" r="71.02"/><ellipse class="w" cx="602.57" cy="399.13" rx="602.57" ry="119.91"/><ellipse class="w" cx="607.07" cy="210.06" rx="349.25" ry="210.06"/></svg>
 				</div>
 				<!-- object3 car Sound -->
-					<audio id="carsound" preload="auto">
-				      <source src="./sound/lock.mp3" type="audio/mp3">
+					<audio id="lock1sound" preload="auto">
+				      <source src="./sound/lock1.mp3" type="audio/mp3">
 				    </audio>
 				</div>
-				<div class="next" id="lockplay">
+				<div class="next" id="lock2play">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="car">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1205.14 611.2"><circle class="w" cx="336.97" cy="540.18" r="71.02"/><circle class="w" cx="864.65" cy="540.18" r="71.02"/><ellipse class="w" cx="602.57" cy="399.13" rx="602.57" ry="119.91"/><ellipse class="w" cx="607.07" cy="210.06" rx="349.25" ry="210.06"/></svg>
 				</div>
 				<!-- object3 lock Sound -->
-					<audio id="locksound" preload="auto">
-				      <source src="./sound/lock.mp3" type="audio/mp3">
+					<audio id="lock2sound" preload="auto">
+				      <source src="./sound/lock2.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 				
@@ -221,7 +221,7 @@
 					<div class="hot-hot"></div>
 					<!-- object6 Hot Sound -->
 					<audio id="hotsound" preload="auto">
-				      <source src="./sound/hot.wav" type="audio/wav">
+				      <source src="./sound/hot.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 				<div class="next" id="iceplay">
@@ -247,7 +247,7 @@
 					</div>
 					<!-- object6 Fan Sound -->
 					<audio id="fansound" preload="auto">
-				      <source src="./sound/fan.wav" type="audio/wav">
+				      <source src="./sound/fan.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 				<div class="next">
@@ -258,7 +258,7 @@
 					</div>
 					<!-- object6 Ice Sound -->
 					<audio id="pansound" preload="auto">
-				      <source src="./sound/pan.wav" type="audio/wav">
+				      <source src="./sound/pan.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 				<div class="pan-hot">
@@ -278,7 +278,7 @@
 					</div>
 					<!-- object8 Ice Sound -->
 					<audio id="cokesound" preload="auto">
-				      <source src="./sound/coke.wav" type="audio/wav">
+				      <source src="./sound/coke.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 				<div class="next" id="cokecokeplay">
@@ -289,21 +289,29 @@
 					</div>
 					<!-- object8 Ice Sound -->
 					<audio id="cokecokesound" preload="auto">
-				      <source src="./sound/coke.wav" type="audio/wav">
+				      <source src="./sound/coke.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 			</div>
 			<!-- object 8 CUP -->
 			<div class="object8">
-				<div class="previous">
+				<div class="previous" id="tv1play">
 					<div class="sky"></div>
 					<div class="ground"></div>
-					<div class="tv"></div>					
+					<div class="tv"></div>	
+					<!-- object8 TV Sound -->
+					<audio id="tv1sound" preload="auto">
+				      <source src="./sound/tv1.mp3" type="audio/mp3">
+				    </audio>				
 				</div>
-				<div class="next">
+				<div class="next" id="tv2play">
 					<div class="sky"></div>
 					<div class="ground"></div>
 					<div class="tv"></div>
+					<!-- object8 TV Sound -->
+					<audio id="tv2sound" preload="auto">
+				      <source src="./sound/tv2.mp3" type="audio/mp3">
+				    </audio>
 				</div>
 			</div>
 				<!-- object 9 TRAIN -->
@@ -314,7 +322,7 @@
 					<div class="old"></div>
 					<!-- object8 Ice Sound -->
 					<audio id="oldsound" preload="auto">
-				      <source src="./sound/old.wav" type="audio/wav">
+				      <source src="./sound/old.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 				<div class="next" id="newplay">
@@ -323,28 +331,28 @@
 					<div class="new"></div>
 					<!-- object8 Ice Sound -->
 					<audio id="newsound" preload="auto">
-				      <source src="./sound/new.wav" type="audio/wav">
+				      <source src="./sound/new.mp3" type="audio/mp3">
 				    </audio>
 				</div>
 			</div>
 				
 				<!-- object 10 ball -->
 			<div class="object10">
-				<div class="previous" id="soccerplay">
+				<div class="previous" id="soccer1play">
 					<div class="sky"></div>
-				<!-- object9 soccer Sound -->
-					<audio id="soccersound" preload="auto">
-				      <source src="./sound/soccer.wav" type="audio/wav">
+				<!-- object9 soccer1 Sound -->
+					<audio id="soccer1sound" preload="auto">
+				      <source src="./sound/soccer1.mp3" type="audio/mp3">
 				    </audio>	
 				</div>
-				<div class="next" id="basketballplay">
+				<div class="next" id="soccer2play">
 					<div class="sky"></div>
 					<div class="ground" id="g2"></div>
 					<div class="ground" id="g1"></div>
 				</div>
-				<!-- object9 basketball Sound -->
-					<audio id="basketballsound" preload="auto">
-				      <source src="./sound/basketball.wav" type="audio/wav">
+				<!-- object9 soccer2 Sound -->
+					<audio id="soccer2sound" preload="auto">
+				      <source src="./sound/soccer3.mp3" type="audio/mp3">
 				    </audio>	
 			</div>
 		</div>
@@ -647,43 +655,64 @@ var angle = 0;
         });
 
     // car sound
-    var carsound = $("#carsound")[0];
-        $("#carplay").mouseover(function() {
-       		carsound.loop = false;
-        	carsound.play();
+    var lock1sound = $("#lock1sound")[0];
+        $("#lock1play").mouseover(function() {
+       		lock1sound.loop = false;
+        	lock1sound.play();
         });
-        $("#carplay").mouseout(function() {
-        	carsound.pause();
+        $("#lock1play").mouseout(function() {
+        	lock1sound.pause();
         });
 
     // lock sound
-    var locksound = $("#locksound")[0];
-        $("#lockplay").mouseover(function() {
-       		locksound.loop = false;
-        	locksound.play();
+    var lock2sound = $("#lock2sound")[0];
+        $("#lock2play").mouseover(function() {
+       		lock2sound.loop = false;
+        	lock2sound.play();
         });
-        $("#lockplay").mouseout(function() {
-        	locksound.pause();
+        $("#lock2play").mouseout(function() {
+        	lock2sound.pause();
         });
+
+    // tv1 sound
+    var tv1sound = $("#tv1sound")[0];
+        $("#tv1play").mouseover(function() {
+       		tv1sound.loop = true;
+        	tv1sound.play();
+        });
+        $("#tv1play").mouseout(function() {
+        	tv1sound.pause();
+        });
+
+    // tv2 sound
+    var tv2sound = $("#tv2sound")[0];
+        $("#tv2play").mouseover(function() {
+       		tv2sound.loop = true;
+        	tv2sound.play();
+        });
+        $("#tv2play").mouseout(function() {
+        	tv2sound.pause();
+        });
+
 
     // soccer sound
-    var soccersound = $("#soccersound")[0];
-        $("#soccerplay").mouseover(function() {
-       		soccersound.loop = false;
-        	soccersound.play();
+    var soccer1sound = $("#soccer1sound")[0];
+        $("#soccer1play").mouseover(function() {
+       		soccer1sound.loop = false;
+        	soccer1sound.play();
         });
-        $("#soccerplay").mouseout(function() {
-        	soccersound.pause();
+        $("#soccer1play").mouseout(function() {
+        	soccer1sound.pause();
         });
 
-    // basketball sound
-    var basketballsound = $("#basketballsound")[0];
-        $("#basketballplay").mouseover(function() {
-       		basketballsound.loop = true;
-        	basketballsound.play();
+    // soccer2 sound
+    var soccer2sound = $("#soccer2sound")[0];
+        $("#soccer2play").mouseover(function() {
+       		soccer2sound.loop = true;
+        	soccer2sound.play();
         });
-        $("#basketballplay").mouseout(function() {
-        	basketballsound.pause();
+        $("#soccer2play").mouseout(function() {
+        	soccer2sound.pause();
         });
 
     // old sound
@@ -696,7 +725,7 @@ var angle = 0;
         	oldsound.pause();
         });
 
-    // basketball sound
+    // new sound
     var newsound = $("#newsound")[0];
         $("#newplay").mouseover(function() {
        		newsound.loop = false;
