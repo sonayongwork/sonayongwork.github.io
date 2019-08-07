@@ -535,6 +535,11 @@ var angle = 0;
 	$(".object4 .previous").mouseover(function(){
 		$(".object4 .previous .sky").removeClass("newbg");
 		$(".object4 .previous .sky").addClass("changebg");
+		$(".object4 .previous .ground").css("background", "#ff00cf");
+	});
+
+	$(".object4 .previous").mouseout(function(){
+		$(".object4 .previous .ground").css("background", "#24ff39");
 	});
 
 	$(".object4 .next").mouseover(function(){

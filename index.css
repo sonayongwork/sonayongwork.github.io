@@ -432,10 +432,12 @@ body{
 .object3 .next .sky{background: linear-gradient(0deg, yellow, yellow, yellow, #d1f0ff, #88e6ff, #2eafff, #0095ff);}
 .object3 .next .ground{background: #4e4e4e;}
 
-.object4 .previous .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00); transition: background 0.3s;}
+.object4 .previous .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00);}
 .object4 .previous .ground{background: #24ff39;}
+/*.object4 .previous:hover .ground{background: #000;}*/
 .object4 .next .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00);}
 .object4 .next .ground{background: #24ff39;}
+
 
 
 .object5 .previous .sky{background: #e9e9e9;}
@@ -713,14 +715,15 @@ body{
 
 .previouslight {
     position: absolute;
-    width: 100%;
+    width: 300%;
     height: 100%;
+    left: -200%;
     background: transparent;
 }
 
 .nextlight {
     position: absolute;
-    width: 100%;
+    width: 300%;
     height: 100%;
     background: transparent;
 }
