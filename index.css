@@ -355,7 +355,7 @@ body{
 }
 .can {
 	position: absolute;
-    width: 13vw;
+    width: 15vw;
     height: auto;
     top: 50%;
     left: 50%;
@@ -430,9 +430,9 @@ body{
 .object2 .next .ground{background: #2dc700;}
 
 .object3 .previous .sky{background: #009cff;}
-.object3 .previous .ground{background: #5f5f5f;}
+.object3 .previous .ground{background: #676767;}
 .object3 .next .sky{background: #009cff;}
-.object3 .next .ground{background: #5f5f5f;}
+.object3 .next .ground{background: #676767;}
 
 .object4 .previous .sky{background: #fff100;}
 .object4 .previous .ground{background: #24ff39;}
@@ -474,7 +474,7 @@ body{
 .object9 .previous {overflow: hidden;}
 .object9 .next {overflow: hidden;}
 */
-.object8 .previous .sky{background: #ff4000;}
+.object8 .previous .sky{background: #ff4700;}
 .object8 .previous .ground{background: #00ff00;}
 .object8 .next .sky{background: #006eff;}
 .object8 .next .ground{background: #2dc700;}
