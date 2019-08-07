@@ -248,7 +248,7 @@ body{
 
 	.car {
 		position: absolute;
-	    width: 45vw;
+	    width: 43vw;
 	    height: auto;
 	    top: 50%;
     	left: 50%;
@@ -410,10 +410,12 @@ body{
 .seventh{transform: rotate(1260deg);}
 .eighth{transform: rotate(1440deg);}*/
 /******************** background color ********************/
-.object1 .previous .sky{background: linear-gradient(0deg, #fffb4e, #ffd200);}
-.object1 .previous .ground{background: #00d800; z-index: 2;}
-.object1 .next .sky{background: linear-gradient(0deg, #020e1f, #000833);}
-.object1 .next .ground{background: #000; z-index: 2;}
+.object1 .previous .sky{background: #fff100;}
+.object1 .previous .ground{background: #00ff00; z-index: 2;}
+.object1 .next .sky{background: #000;}
+.object1 .next .ground{background: #151515; z-index: 2;}
+
+
 
 /*.object2 .previous .sky{background: linear-gradient(0deg, #ffffff, #ffffff, #ffffff, #00d3ff, #006eff);}
 .object2 .previous .ground{background: #3cd824;}
@@ -427,22 +429,22 @@ body{
 .object2 .next .sky{background: #006eff;}
 .object2 .next .ground{background: #2dc700;}
 
-.object3 .previous .sky{background: linear-gradient(0deg, yellow, yellow, yellow, #d1f0ff, #88e6ff, #2eafff, #0095ff);}
-.object3 .previous .ground{background: #4e4e4e;}
-.object3 .next .sky{background: linear-gradient(0deg, yellow, yellow, yellow, #d1f0ff, #88e6ff, #2eafff, #0095ff);}
-.object3 .next .ground{background: #4e4e4e;}
+.object3 .previous .sky{background: #009cff;}
+.object3 .previous .ground{background: #5f5f5f;}
+.object3 .next .sky{background: #009cff;}
+.object3 .next .ground{background: #5f5f5f;}
 
-.object4 .previous .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00);}
+.object4 .previous .sky{background: #fff100;}
 .object4 .previous .ground{background: #24ff39;}
 /*.object4 .previous:hover .ground{background: #000;}*/
-.object4 .next .sky{background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00);}
+.object4 .next .sky{background: #fff100;}
 .object4 .next .ground{background: #24ff39;}
 
 
 
-.object5 .previous .sky{background: #e9e9e9;}
+.object5 .previous .sky{background: #f6f6f6;}
 .object5 .previous .ground{background: #a9a9a9;}
-.object5 .next .sky{background: #e9e9e9;}
+.object5 .next .sky{background: #f6f6f6;}
 .object5 .next .ground{background: #a9a9a9;}
 
 /*.object6 .previous .sky{background: #e9e9e9;}
@@ -450,18 +452,20 @@ body{
 .object6 .next .sky{background: #e9e9e9;}
 .object6 .next .ground{background: #ccc;}
 */
-.object6 .previous .sky{background: linear-gradient(0deg, #ff6c00, #ff1d00);}
-.object6 .previous .ground{background: #e9e9e9;}
-.object6 .next .sky{background: linear-gradient(0deg, #00abff, #004bff);}
-.object6 .next .ground{background: gray;}
+.object6 .previous .sky{background: #13ff09;}
+.object6 .previous .ground{background: #e6a335;}
+.object6 .next .sky{background: #13ff09;}
+.object6 .next .ground{background: #e6a335;}
 
 .object7 .previous .sky{background: #000;}
-.object7 .previous .ground{background: gray;}
+.object7 .previous .ground{background: #151515;}
 .object7 .next .sky{background: #000; }
-.object7 .next .ground{background: gray;}
+.object7 .next .ground{background: #151515;}
 .object7 .previous{transition: background 0.3s;}
 .object7 .previous:hover .sky{background: blue;}
 .object7 .previous:hover .ground{background: midnightblue;}
+.object7 .next:hover .sky{background: blue;}
+.object7 .next:hover .ground{background: midnightblue;}
 
 /*.object9 .previous .sky{background: skyblue;}
 .object9 .previous .ground{background: green;}
@@ -470,10 +474,10 @@ body{
 .object9 .previous {overflow: hidden;}
 .object9 .next {overflow: hidden;}
 */
-.object8 .previous .sky{background: gray;}
-.object8 .previous .ground{background: #00ea4d;}
-.object8 .next .sky{background: gray;}
-.object8 .next .ground{background: #00ea4d;}
+.object8 .previous .sky{background: #ff4000;}
+.object8 .previous .ground{background: #00ff00;}
+.object8 .next .sky{background: #006eff;}
+.object8 .next .ground{background: #2dc700;}
 
 .object8 #g2 {
     background: repeating-linear-gradient(50deg, #fff 1.2%, #00ea4d,#00ea4d,#00ea4d,#00ea4d 2%);
@@ -712,11 +716,80 @@ body{
     left: 25%;
 }
 
+.cocacola {
+    position: absolute;
+    width: 300%;
+    height: 200%;
+    left: -200%;
+    background: transparent;
+    transition: opacity 1s;
+    transition-timing-function: cubic-bezier(.12,1.14,.1,.88);
+    transition-delay: 0.4s;
+}
 
+.pepsi {
+    position: absolute;
+    width: 300%;
+    height: 200%;
+    background: transparent;
+    transition: opacity 1s;
+    transition-timing-function: cubic-bezier(.12,1.14,.1,.88);
+    transition-delay: 0.4s;
+}
+
+.cokaani{
+	opacity: 0;
+	background: linear-gradient(0deg, #ff6c00, #ff1d00);
+	/*animation-name: colared;
+	animation-delay: 0.4s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;*/
+}
+/*
+@keyframes colared{
+	0%{
+		background: transparent;
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background: transparent;
+		opacity: 0;
+	}
+}*/
+
+.pepsiani{
+	opacity: 0;
+	background: linear-gradient(0deg, #00abff, #004bff);
+	/*animation-name: colablue;
+	animation-delay: 0.4s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;*/
+}
+
+/*@keyframes colablue{
+	0%{
+		background: transparent;
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background: transparent;
+		opacity: 0;
+	}
+}
+
+*/
 .previouslight {
     position: absolute;
     width: 300%;
-    height: 100%;
+    height: 200%;
     left: -200%;
     background: transparent;
 }
@@ -724,7 +797,7 @@ body{
 .nextlight {
     position: absolute;
     width: 300%;
-    height: 100%;
+    height: 200%;
     background: transparent;
 }
 
@@ -741,7 +814,7 @@ body{
 		background: transparent;
 	}
 	50%{
-		background: yellow;
+		background: #fffc00;
 	}
 	100%{
 		background: transparent;
@@ -850,7 +923,19 @@ body{
 }
 
 .newbg{
-	background: linear-gradient(0deg, #ffffff, #f3ff00, #ffcc00) !important;
+	background: #fff100 !important;
+}
+
+.newbgground{
+	background: #24ff39 !important;
+}
+
+.wind1{
+	display: block;
+}
+
+.wind2{
+	display: none;
 }
 
 @media all and (max-device-width: 800px){
