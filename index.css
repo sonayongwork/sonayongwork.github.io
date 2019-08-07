@@ -303,7 +303,7 @@ body{
 
 	.cup {
 		position: absolute;
-	    width: 40vw;
+	    width: 37vw;
 	    height: auto;
 	    top: 50%;
 	    left: 50%;
@@ -442,10 +442,10 @@ body{
 
 
 
-.object5 .previous .sky{background: #f6f6f6;}
-.object5 .previous .ground{background: #a9a9a9;}
-.object5 .next .sky{background: #f6f6f6;}
-.object5 .next .ground{background: #a9a9a9;}
+.object5 .previous .sky{background: #f4f4f4;}
+.object5 .previous .ground{background: #cacaca;}
+.object5 .next .sky{background: #f4f4f4;}
+.object5 .next .ground{background: #cacaca;}
 
 /*.object6 .previous .sky{background: #e9e9e9;}
 .object6 .previous .ground{background: #ccc;}
@@ -607,7 +607,7 @@ body{
 
 	.hot-cup{
 		position: absolute;
-	    width: 40vw;
+	    width: 37vw;
 	    height: auto;
 	    top: 50%;
 	    left: 50%;
@@ -908,7 +908,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background: repeating-linear-gradient(120deg, #fff 0%, transparent, transparent, transparent, transparent, transparent 3%);
-    border: 10px solid #fff;
+    border: 14px solid #fff;
     border-bottom: 0;
 }
 
