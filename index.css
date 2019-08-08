@@ -200,7 +200,7 @@ body{
 
 
 .treetree {
-    width: 8vw;
+    width: 9.33vw;
     float: left;
 }
 
@@ -243,7 +243,11 @@ body{
 
 
 .previous .tree{
-	left: -13.3%;
+	left: -17.5%;
+}
+
+.next .tree{
+	left: -29%;
 }
 
 	.car {
@@ -303,7 +307,7 @@ body{
 
 	.cup {
 		position: absolute;
-	    width: 37vw;
+	    width: 36vw;
 	    height: auto;
 	    top: 50%;
 	    left: 50%;
@@ -453,9 +457,9 @@ body{
 .object6 .next .ground{background: #ccc;}
 */
 .object6 .previous .sky{background: #13ff09;}
-.object6 .previous .ground{background: #dca750;}
+.object6 .previous .ground{background: #d2a55b;}
 .object6 .next .sky{background: #13ff09;}
-.object6 .next .ground{background: #dca750;}
+.object6 .next .ground{background: #d2a55b;}
 
 .object7 .previous .sky{background: #000;}
 .object7 .previous .ground{background: #151515;}
@@ -509,8 +513,8 @@ body{
 		}
 		.sun-circle{
 			position: relative;
-			width: 15vw;
-			height: 15vw;
+			width: 16vw;
+			height: 16vw;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
@@ -528,8 +532,8 @@ body{
 		}
 		.moon-circle{
 			position: relative;
-			width: 15vw;
-			height: 15vw;
+			width: 16vw;
+			height: 16vw;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
@@ -607,7 +611,7 @@ body{
 
 	.hot-cup{
 		position: absolute;
-	    width: 37vw;
+	    width: 36vw;
 	    height: auto;
 	    top: 50%;
 	    left: 50%;
@@ -892,7 +896,7 @@ body{
 
 .tv {
     position: absolute;
-    width: 35vw;
+    width: 35.5vw;
     height: 20vw;
     top: 50%;
     left: 50%;
@@ -902,7 +906,7 @@ body{
 
 .rectangle1 {
     position: absolute;
-    width: 35vw;
+    width: 36vw;
     height: 20vw;
     top: 50%;
     left: 50%;
@@ -914,7 +918,7 @@ body{
 
 .rectangle2 {
     position: absolute;
-    width: 35vw;
+    width: 36vw;
     height: 20vw;
     top: 50%;
     left: 50%;
