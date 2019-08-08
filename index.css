@@ -472,8 +472,8 @@ body{
 .object7 .previous{transition: background 0.3s;}
 .object7 .previous:hover .sky{background: blue;}
 .object7 .previous:hover .ground{background: midnightblue;}
-.object7 .next:hover .sky{background: blue;}
-.object7 .next:hover .ground{background: midnightblue;}
+/*.object7 .next:hover .sky{background: blue;}
+.object7 .next:hover .ground{background: midnightblue;}*/
 
 /*.object9 .previous .sky{background: skyblue;}
 .object9 .previous .ground{background: green;}
@@ -968,6 +968,117 @@ body{
     margin-left: 13.3%;
     transform: translateY(-50%);
 }
+
+.channel{
+	animation-name: channel;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	/*animation-direction: alternate;*/
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+
+@keyframes channel{
+	0%{
+		background: gray;
+	}
+	5.9%{
+		background: gray;
+	}
+	6%{
+		background: #fff100;
+	}
+	34.9%{
+		background: #fff100;
+	}
+	35%{
+		background: gray;
+	}
+	40.9%{
+		background: gray;
+	}
+	41%{
+		background: blue;
+	}
+	64.9%{
+		background: blue;
+	}
+	65%{
+		background: gray;
+	}
+	71.9%{
+		background: gray;
+	}
+	72%{
+		background: #00ff00;
+	}
+	89.9%{
+		background: #00ff00;
+	}
+	90%{
+		background: gray;
+	}
+	100%{
+		background: gray;
+	}
+}
+
+.channelground{
+	animation-name: channelground;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	/*animation-direction: alternate;*/
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+
+@keyframes channelground{
+	0%{
+		background: #676767;
+	}
+	5.9%{
+		background: #676767;
+	}
+	6%{
+		background: #ffe000;
+	}
+	34.9%{
+		background: #ffe000;
+	}
+	35%{
+		background: #676767;
+	}
+	40.9%{
+		background: #676767;
+	}
+	41%{
+		background: midnightblue;
+	}
+	64.9%{
+		background: midnightblue;
+	}
+	65%{
+		background: #676767;
+	}
+	71.9%{
+		background: #676767;
+	}
+	72%{
+		background: #2dc700;
+	}
+	89.9%{
+		background: #2dc700;
+	}
+	90%{
+		background: #676767;
+	}
+	100%{
+		background: #676767;
+	}
+}
+
+
+
 
 @media all and (max-device-width: 800px){
 

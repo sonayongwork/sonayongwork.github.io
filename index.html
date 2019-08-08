@@ -433,8 +433,8 @@
 				    </audio>				
 				</div>
 				<div class="next" id="tv2play">
-					<div class="sky"></div>
-					<div class="ground"></div>
+					<div class="sky channel"></div>
+					<div class="ground channelground"></div>
 					<div class="tv"></div>
 					<!-- object8 TV Sound -->
 					<audio id="tv2sound" preload="auto">
@@ -581,7 +581,7 @@ var angle = 0;
 		$(".object8").show();
 	});
 
-	// next 클릭
+	// next 
 	$(".object2 .next").click(function(){
 		$(".object1").hide();
 		$(".object3").show();
@@ -740,6 +740,19 @@ var angle = 0;
 		$(".pepsi").addClass("pepsiani");
 	});
 
+	$(".object7 .next").mouseover(function(){
+		// $(".object7 .next .sky").addClass("channel");
+		// $(".object7 .next .ground").removeClass("channel");
+		$(".channel").css("animation-play-state", "running");
+		$(".channelground").css("animation-play-state", "running");
+	});
+
+	$(".object7 .next").mouseout(function(){
+		// $(".object7 .next .sky").removeClass("channel");
+		// $(".object7 .next .ground").removeClass("channel");
+		$(".channel").css("animation-play-state", "paused");
+		$(".channelground").css("animation-play-state", "paused");
+	});
 
 	// $(".object9 .previous").mouseover(function(){
 	// 	$(".old").css("animation-play-state", "running");
