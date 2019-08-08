@@ -577,6 +577,10 @@ var angle = 0;
 
 	});
 
+	$(".object2 .previous").mouseout(function(){
+		$(".previous .wind2").hide();
+		$(".previous .wind1").show();
+	});
 
 
 	$(".object2 .next").mouseover(function(){
@@ -588,6 +592,11 @@ var angle = 0;
 		$(".next .wind2").show();
 	}, 500);
 
+	});
+
+	$(".object2 .next").mouseout(function(){
+		$(".next .wind2").hide();
+		$(".next .wind1").show();
 	});
 
 
