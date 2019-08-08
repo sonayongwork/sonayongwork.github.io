@@ -11,31 +11,6 @@ body{
 	display: none;
 }
 
-/* preloader */
-				.flex-center {
-				  display: -webkit-box;
-				  display: -ms-flexbox;
-				  display: flex;
-				  -webkit-box-align: center;
-				  -ms-flex-align: center;
-				  align-items: center;
-				  -webkit-box-pack: center;
-				  -ms-flex-pack: center;
-				  justify-content: center;
-				}
-
-				.preloader {
-				  position: fixed;
-				  top: 0;
-				  left: 0;
-				  width: 100%;
-				  height: 100%;
-				  background: #ffe6ca;
-				  z-index: 10;
-				}
-
-/* preloader fin*/
-
 .mobilefirstpage{
 	display: none !important;
 }
@@ -220,8 +195,11 @@ body{
     top: 50%;
     left: -24%;
     transform: translateY(-50%);
-    cursor: pointer;
 }
+
+
+
+
 
 
 .treetree {
@@ -248,8 +226,8 @@ body{
 
 .object2 .previous{
 	overflow: hidden;
-	width: 50%;
-	left: 0;
+	width: 70%;
+	left: -20%;
 	z-index: 2;
 }
 
@@ -266,13 +244,14 @@ body{
 }
 
 
-
 .previous .tree{
 	left: -17.5%;
+	cursor: w-resize;
 }
 
 .next .tree{
 	left: -29%;
+	cursor: e-resize;
 }
 
 	.car {
@@ -968,7 +947,7 @@ body{
 }
 
 .object2 .previous .tree{
-	left: -59.6%;
+	left: -40.7%;
 }
 
 .anothertree{
@@ -978,6 +957,16 @@ body{
 	left: -100%;
 	margin-left: 0.9%;
 	z-index: 1;
+	overflow: hidden;
+}
+
+.anotree {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-left: 13.3%;
+    transform: translateY(-50%);
 }
 
 @media all and (max-device-width: 800px){
