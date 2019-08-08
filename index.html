@@ -10,6 +10,29 @@
 </head>
 <body>
 <div class="mobile">
+
+	<!-- preloader -->
+		<div class="preloader js-preloader flex-center"></div>
+		<script src="https://object.click/jquery.preloadinator.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				$('.js-preloader').preloadinator({
+					minTime: 0
+				});
+
+				jQuery(window).load(function() {
+				  jQuery(".preloader").fadeOut();
+				});
+			});
+
+		</script>		
+		
+    <!-- preloader fin-->
+
+
+
 	<div class="mobile-page">
 		<div class="mobile-box1"></div>
 		<div class="mobile-box2"></div>
