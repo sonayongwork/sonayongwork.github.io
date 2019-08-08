@@ -970,6 +970,11 @@ body{
 }
 
 @media all and (max-device-width: 800px){
+
+	body{
+		background: #fff !important;
+	}
+
 	.desktop{
 		display: none;
 	}
@@ -1002,7 +1007,7 @@ body{
 	    height: 200%;
 	    top: 50%;
 	    left: -100%;
-	    background: #009805;
+	    background: #009005;
 	}
 
 	.upsidedown {
